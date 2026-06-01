@@ -9,17 +9,17 @@ import './style.css';
 import { Landing } from './pages/Landing/index.jsx';
 
 export function App() {
-	return (
-		<LocationProvider>
-			<main>
-				<Router>
-					<Route path="/" component={Landing} />
+  return (
+    <LocationProvider>
+      <main>
+        <Router>
+          <Route path="/" component={Landing} />
 
-					<Route default component={NotFound} />
-				</Router>
-			</main>
-		</LocationProvider>
-	);
+          <Route default component={NotFound} />
+        </Router>
+      </main>
+    </LocationProvider>
+  );
 }
 
 render(<App />, document.getElementById('app'));
