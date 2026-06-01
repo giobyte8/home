@@ -1,7 +1,15 @@
+import { PageSlider } from '../../components/PageSlider/index.jsx';
+import { Page } from '../../components/Page/index.jsx';
+import { Home } from '../../components/Home/index.jsx';
+import { Bookmarks } from '../../components/Bookmarks/index.jsx';
+import { Other } from '../../components/Other/index.jsx';
+
 export function Landing() {
   return (
-    <div className="landing">
-      <h1>Home Landing</h1>
-    </div>
+    <PageSlider>
+      <Page><Home /></Page>
+      <Page><Bookmarks /></Page>
+      <Page><Other /></Page>
+    </PageSlider>
   );
 }

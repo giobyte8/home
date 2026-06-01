@@ -1,0 +1,38 @@
+.page-slider {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+  position: relative;
+}
+
+.page-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.page-slider__dots {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+}
+
+.page-slider__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: currentColor;
+  opacity: 0.35;
+  transition: opacity 0.2s ease;
+}
+
+.page-slider__dot--active {
+  opacity: 1;
+}
