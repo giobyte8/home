@@ -6,13 +6,15 @@ import { Home } from './pages/Home/index.jsx';
 import { NotFound } from './pages/_404.jsx';
 import './style.css';
 
+import { Landing } from './pages/Landing/index.jsx';
+
 export function App() {
 	return (
 		<LocationProvider>
-			<Header />
 			<main>
 				<Router>
-					<Route path="/" component={Home} />
+					<Route path="/" component={Landing} />
+
 					<Route default component={NotFound} />
 				</Router>
 			</main>
