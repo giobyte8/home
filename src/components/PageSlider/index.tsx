@@ -48,3 +48,11 @@ export function PageSlider({ children }: PageSliderProps) {
     </div>
   );
 }
+
+type PageProps = {
+  children: ComponentChildren;
+};
+
+export const Page = ({ children }: PageProps) => {
+  return <div class="page">{children}</div>;
+};

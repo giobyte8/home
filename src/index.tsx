@@ -1,25 +1,19 @@
 import { render } from 'preact';
 import { LocationProvider, Router, Route } from 'preact-iso';
 
-import { Header } from './components/Header.jsx';
-import { Home } from './pages/Home/index.jsx';
+import { Home } from './pages/Home.js';
 import { NotFound } from './pages/_404.jsx';
 import './style.css';
 
-import { Landing } from './pages/Landing/index.jsx';
 
 export function App() {
-  return (
-    <LocationProvider>
-      <main>
-        <Router>
-          <Route path="/" component={Landing} />
+  return <LocationProvider>
+    <Router>
+      <Route path="/" component={Home} />
 
-          <Route default component={NotFound} />
-        </Router>
-      </main>
-    </LocationProvider>
-  );
+      <Route default component={NotFound} />
+    </Router>
+  </LocationProvider>;
 }
 
 render(<App />, document.getElementById('app'));
