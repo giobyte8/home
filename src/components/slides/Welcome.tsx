@@ -1,8 +1,9 @@
 import './slides.css';
+import background1 from '/src/assets/bg/background_1.jpg';
 
 export const Welcome = () => {
   return (
-    <div className="slide">
+    <div className="slide" style={{ backgroundImage: `url(${background1})` }}>
       <h1 style={{ marginTop: 0 }}>Home</h1>
 
       <h2>Fleet: Macbook M4</h2>

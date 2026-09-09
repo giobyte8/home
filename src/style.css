@@ -3,8 +3,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #222;
-  background-color: #ffffff;
+  color: #F0EAD6;
+  background-color: #8A9A5B;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -29,9 +29,9 @@ main {
   height: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     color: #ccc;
     background-color: #1a1a1a;
   }
-}
+} */
