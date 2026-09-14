@@ -53,7 +53,7 @@ const rbxSection: LinksSection = {name: 'Fleet RBX', groups: [
     links: [
       // { label: 'Neo4j', href: 'http://192.168.100.130:8203' },
       { label: 'PGAdmin', href: 'http://192.168.100.130:8203' },
-      // { label: 'RabbitMQ', href: 'http://192.168.100.130:8304' },
+      { label: 'RabbitMQ', href: 'http://192.168.100.130:8204' },
     ],
   },
   {
