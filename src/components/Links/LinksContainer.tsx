@@ -4,7 +4,7 @@ import * as T from './types';
 
 const Link = ({ label, href }: T.Link) => {
   return <>
-    <a className="link" target="_blank" rel="noopener noreferrer" href={href}>
+    <a className="link" rel="noopener noreferrer" href={href}>
       {label}
     </a>
     <br/>
