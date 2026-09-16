@@ -13,6 +13,7 @@ const m4Section: LinksSection = {name: 'Fleet M4', groups: [
   {
     name: 'Telemetry',
     links: [
+      { label: 'Dozzle', href: 'http://localhost:8213' },
       { label: 'Jaeger', href: 'http://localhost:8207' },
       { label: 'Prometheus', href: 'http://localhost:8208' },
       { label: 'Grafana', href: 'http://localhost:8209' },
@@ -40,6 +41,7 @@ const devSection: LinksSection = {name: 'Fleet Dev', groups: [
   {
     name: 'Telemetry',
     links: [
+      { label: 'Dozzle', href: 'http://localhost:8300' },
       { label: 'Jaeger', href: 'http://localhost:16686' },
       { label: 'Prometheus', href: 'http://localhost:9090' },
       { label: 'Grafana', href: 'http://localhost:3000' },
@@ -59,6 +61,7 @@ const rbxSection: LinksSection = {name: 'Fleet RBX', groups: [
   {
     name: 'Telemetry',
     links: [
+      { label: 'Dozzle', href: 'http://192.168.100.130:8213' },
       { label: 'Jaeger', href: 'http://192.168.100.130:8207' },
       { label: 'Prometheus', href: 'http://192.168.100.130:8208' },
       { label: 'Grafana', href: 'http://192.168.100.130:8209' },
