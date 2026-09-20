@@ -70,9 +70,17 @@ const rbxSection: LinksSection = {name: 'Fleet RBX', groups: [
   {
     name: 'Apps',
     links: [
-      { label: 'Ddownloader', href: 'https://dl.giovanniaguirre.me' },
+      { label: 'Ddownloader', href: 'https://dl.giovanniaguirre.me/directories' },
       { label: 'Syncthing', href: 'https://st.giovanniaguirre.me' },
     ]
+  },
+  {
+    name: 'Galleries',
+    links: [
+      { label: 'Galleries Admin', href: 'http://192.168.100.130:8210/admin' },
+      { label: 'Galleries Scan Scheduler', href: 'http://192.168.100.130:8211' },
+      { label: 'Galleries Estatico', href: 'http://192.168.100.130:8212' },
+    ],
   }
 ]};
 
